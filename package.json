@@ -1,0 +1,28 @@
+{
+  "name": "commentfunctionmern",
+  "version": "1.0.0",
+  "description": "commentfunction build with mern stack",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaulHellweg/commentFunctionMern.git"
+  },
+  "author": "Paul Hellweg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PaulHellweg/commentFunctionMern/issues"
+  },
+  "homepage": "https://github.com/PaulHellweg/commentFunctionMern#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.9"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
