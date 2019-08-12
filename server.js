@@ -2,9 +2,11 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 
+const user = require("./routes/api/user");
+
 const app = express();
 
-//axios  Middleware
+//bodyParser  Middleware
 app.use(bodyParser.json());
 
 //DB
@@ -14,6 +16,9 @@ mongoose
   .connect(db)
   .then(() => console.log("Connected..."))
   .catch(err => console.log(err));
+
+//use routes
+app.use("/api/user", user);
 
 const port = process.env.PORT || 5000;
 
